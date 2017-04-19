@@ -28,4 +28,30 @@ public class XPList {
         }
         return temp;
     }
+
+    /**
+     * Converts xp to a level
+     *
+     * @param xp
+     * @return
+     */
+    public int xpToLevel(int xp) {
+        int level = 0;
+        for (int i = 0; i < 120; i++) {
+            if (levels[i] > xp) {
+                level = i;
+                break;
+            }
+        }
+        return level;
+    }
+
+    /**
+     * Returns min xp required to reach a level
+     *
+     * @param level
+     */
+    public int levelToXp(int level) {
+        return levels[level - 1];
+    }
 }

@@ -8,6 +8,7 @@ package biz.braham.runescape.xp.calcuator;
  */
 public class Main {
     public static void main(String[] args) {
-
+        //init xp calculator
+        XPCalculator xpCalculator = new XPCalculator();
     }
 }
